@@ -3,9 +3,10 @@ const nextConfig = {
     experimental: {
       appDir: true,
       serverComponentsExternalPackages: ["mongoose"],
+      serverActions: true
     },
     images: {
-      domains: ['lh3.googleusercontent.com'],
+      domains: ['lh3.googleusercontent.com', 'images.pexels.com'],
     },
     webpack(config) {
       config.experiments = {

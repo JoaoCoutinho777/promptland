@@ -1,6 +1,8 @@
 "use client"
 import { useState, useEffect } from 'react';
 import PromptCard from './PromptCard';
+import BackgroundAnimation from './BackgroundAnimatrion';
+import Tag from './Tag';
 
 const PromptCardList = ({ data, handleTagClick}) => {
   return (
@@ -44,6 +46,7 @@ const Feed = () => {
           required
           className='search_input peer'/>
       </form>
+      {/* <Tag data={posts}/> */}
 
       <PromptCardList 
         data={posts}
